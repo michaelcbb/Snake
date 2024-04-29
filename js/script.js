@@ -8,7 +8,7 @@ const snake = [
     { x: 230, y: 200 }
 ]
 
-let direction "down"
+let direction = "left"
 
 const drawSnake = () => {
     ctx.fillStyle = "#ddd"
