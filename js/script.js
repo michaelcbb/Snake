@@ -48,8 +48,8 @@ const moveSnake = () => {
 
 const gameLoop = () => {
     clearInterval(loopId)
-    ctx.clearRect(0, 0, 600, 600)
 
+    ctx.clearRect(0, 0, 600, 600)
     moveSnake()
     drawSnake()
 
