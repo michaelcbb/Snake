@@ -62,11 +62,11 @@ gameLoop()
 
 document.addEventListener("keydown", ({ key }) => {
 
-    if(key == "ArrowRight") {
+    if(key == "ArrowRight" && direction != "left") {
         direction = "Right"
     }
 
-    if(key == "ArrowLeft") {
+    if(key == "ArrowLeft" && direction != "Right") {
         direction = "Left"
     }
 
