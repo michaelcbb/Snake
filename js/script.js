@@ -60,6 +60,21 @@ const gameLoop = () => {
 
 gameLoop()
 
-document.addEventListener("keydown", (event) => {
-    console.log(event.key)
+document.addEventListener("keydown", ({ key }) => {
+
+    if(key == "ArrowRight") {
+        direction = "Right"
+    }
+
+    if(key == "ArrowLeft") {
+        direction = "Left"
+    }
+
+    if(key == "ArrowUp") {
+        direction = "Up"
+    }
+
+    if(key == "ArrowDown") {
+        direction = "Down"
+    }
 })
