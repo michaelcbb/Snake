@@ -66,15 +66,15 @@ document.addEventListener("keydown", ({ key }) => {
         direction = "right"
     }
 
-    if (key == "ArrowLeft" && direction != "Right") {
+    if (key == "ArrowLeft" && direction != "right") {
         direction = "left"
     }
 
-    if (key == "ArrowUp") {
+    if (key == "ArrowUp" && direction != "down") {
         direction = "up"
     }
 
-    if (key == "ArrowDown") {
+    if (key == "ArrowDown"&& direction != "up") {
         direction = "down"
     }
 })
