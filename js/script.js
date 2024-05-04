@@ -43,6 +43,10 @@ const moveSnake = () => {
     snake.shift()
 }
 
+const drawGrid = () => {
+
+}
+
 const gameLoop = () => {
     clearInterval(loopId)
 
@@ -55,7 +59,7 @@ const gameLoop = () => {
     }, 300)
 }
 
-gameLoop()
+//gameLoop()//
 
 document.addEventListener("keydown", ({ key }) => {
 
