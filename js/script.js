@@ -45,11 +45,15 @@ const moveSnake = () => {
 
 const drawGrid = () => {
     ctx.lineWidth = 1
-    ctx.strokeStyle = "red"
+    ctx.strokeStyle = "white"
 
     ctx.lineTo(300, 0)
     ctx.lineTo(300, 600)
+
+    ctx.stroke()
 }
+
+drawGrid()
 
 const gameLoop = () => {
     clearInterval(loopId)
