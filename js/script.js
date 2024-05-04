@@ -44,7 +44,11 @@ const moveSnake = () => {
 }
 
 const drawGrid = () => {
+    ctx.lineWidth = 1
+    ctx.strokeStyle = "red"
 
+    ctx.lineTo(300, 0)
+    ctx.lineTo(300, 600)
 }
 
 const gameLoop = () => {
