@@ -3,10 +3,7 @@ const ctx = canvas.getContext("2d")
 
 const size = 30
 
-const snake = [ 
-    { x: 200, y: 200 },
-    { x: 230, y: 200 }
-]
+const snake = [{ x: 0, y: 0 }]
 
 let direction, loopId
 
