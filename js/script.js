@@ -47,6 +47,10 @@ const drawGrid = () => {
     ctx.lineWidth = 1
     ctx.strokeStyle = "white"
 
+    for (let i = 30; i < canvas.width; ) {
+
+    }
+
     ctx.lineTo(300, 0)
     ctx.lineTo(300, 600)
 
