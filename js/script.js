@@ -54,8 +54,8 @@ const drawGrid = () => {
         ctx.stroke()
 
         ctx.beginPath()
-        ctx.lineTo(i, 0)
-        ctx.lineTo(i, 600)
+        ctx.lineTo(0, i)
+        ctx.lineTo(600, i)
         ctx.stroke()
     }
 }
