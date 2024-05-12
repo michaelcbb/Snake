@@ -48,8 +48,8 @@ const drawGrid = () => {
     ctx.strokeStyle = "white"
 
     for (let i = 30; i < canvas.width; i += 30) {
-        ctx.lineTo(300, 0)
-        ctx.lineTo(300, 600)
+        ctx.lineTo(i, 0)
+        ctx.lineTo(i, 600)
         ctx.stroke()
     }
 
@@ -70,7 +70,7 @@ const gameLoop = () => {
     }, 300)
 }
 
-gameLoop()
+///gameLoop()///
 
 document.addEventListener("keydown", ({ key }) => {
 
