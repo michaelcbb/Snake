@@ -52,9 +52,12 @@ const drawGrid = () => {
         ctx.lineTo(i, 0)
         ctx.lineTo(i, 600)
         ctx.stroke()
-    }
 
-    
+        ctx.beginPath()
+        ctx.lineTo(i, 0)
+        ctx.lineTo(i, 600)
+        ctx.stroke()
+    }
 }
 
 drawGrid()
