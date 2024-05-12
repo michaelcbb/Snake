@@ -74,7 +74,7 @@ const gameLoop = () => {
     }, 300)
 }
 
-///gameLoop()///
+gameLoop()
 
 document.addEventListener("keydown", ({ key }) => {
 
