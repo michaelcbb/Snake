@@ -16,7 +16,6 @@ let direction, loopId
 const drawFood = () => {
     ctx.fillStyle = food.color
     ctx.fillRect(food.x, food.y, size, size)
-
 }
 
 const drawSnake = () => {
