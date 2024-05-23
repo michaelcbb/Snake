@@ -60,8 +60,6 @@ const drawGrid = () => {
     }
 }
 
-drawGrid()
-
 const gameLoop = () => {
     clearInterval(loopId)
 
