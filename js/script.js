@@ -64,6 +64,7 @@ const gameLoop = () => {
     clearInterval(loopId)
 
     ctx.clearRect(0, 0, 600, 600)
+    drawGrid()
     moveSnake()
     drawSnake()
 
@@ -75,7 +76,6 @@ const gameLoop = () => {
 gameLoop()
 
 document.addEventListener("keydown", ({ key }) => {
-
     if (key == "ArrowRight" && direction != "left") {
         direction = "right"
     }
