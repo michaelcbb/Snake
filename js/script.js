@@ -45,7 +45,7 @@ const moveSnake = () => {
 
 const drawGrid = () => {
     ctx.lineWidth = 1
-    ctx.strokeStyle = "#191919"
+    ctx.strokeStyle = "white"
 
     for (let i = 30; i < canvas.width; i += 30) {
         ctx.beginPath()
