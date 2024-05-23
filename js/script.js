@@ -15,7 +15,7 @@ let direction, loopId
 
 const drawFood = () => {
     ctx.fillStyle = food.color
-    ctx.fillRect(food.X, food.y, size, size)
+    ctx.fillRect(food.x, food.y, size, size)
 
 }
 
