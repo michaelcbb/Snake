@@ -3,9 +3,21 @@ const ctx = canvas.getContext("2d")
 
 const size = 30
 
-const snake = [{ x: 0, y: 0 }]
+const snake = [{ x: 270, y: 240 }]
+
+const food = {
+    x: 90,
+    y: 90,
+    color: "yellow"
+}
 
 let direction, loopId
+
+const drawFood = () => {
+    ctx.fillStyle = food.color
+    ctx.fillRect(food.X, food.y, size, size)
+
+}
 
 const drawSnake = () => {
     ctx.fillStyle = "#ddd"
@@ -45,7 +57,7 @@ const moveSnake = () => {
 
 const drawGrid = () => {
     ctx.lineWidth = 1
-    ctx.strokeStyle = "white"
+    ctx.strokeStyle = "#191919"
 
     for (let i = 30; i < canvas.width; i += 30) {
         ctx.beginPath()
