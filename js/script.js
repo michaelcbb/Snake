@@ -11,7 +11,7 @@ const food = {
     color: "yellow"
 }
 
-///*let direction, loopId///
+let direction, loopId
 
 const drawFood = () => {
     ctx.fillStyle = food.color
